@@ -1,6 +1,7 @@
 
 # Release Log
 
+* 06/08/2021: AutoWrapper version `4.5.1` - added .Net 5.0 support.
 * 03/08/2021: AutoWrapper version `4.5.0` - added `ExcludePaths` option.
 * 02/04/2021: AutoWrapper version `4.4.0` - fix bug on logging request data.
 * 01/12/2021: AutoWrapper version `4.3.2` - added `SwaggerPath` option. Default is `/swagger`.

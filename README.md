@@ -1,6 +1,6 @@
 <img align="right" src="/src/AutoWrapper/logo.png" />
 
-# AutoWrapper  [![Nuget](https://img.shields.io/nuget/v/AutoWrapper.Core?color=blue)](https://www.nuget.org/packages/AutoWrapper.Core) [![Nuget downloads](https://img.shields.io/nuget/dt/AutoWrapper.Core?color=green)](https://www.nuget.org/packages/AutoWrapper.Core) ![.NET Core](https://github.com/proudmonkey/AutoWrapper/workflows/.NET%20Core/badge.svg)
+# AutoWrapper  [![Nuget](https://img.shields.io/nuget/v/AutoWrapper.Core.Net5?color=blue)](https://www.nuget.org/packages/AutoWrapper.Core) [![Nuget downloads](https://img.shields.io/nuget/dt/AutoWrapper.Core?color=green)](https://www.nuget.org/packages/AutoWrapper.Core) ![.NET Core](https://github.com/proudmonkey/AutoWrapper/workflows/.NET%20Core/badge.svg)
 
 Language: English | [中文](README.zh-cn.md)  
 
@@ -26,10 +26,10 @@ Language: English | [中文](README.zh-cn.md)
 * Add `ExcludePaths` option to enable support for `SignalR` and `dapr` routes。
 
 # Installation
-1. Download and Install the latest `AutoWrapper.Core` from NuGet or via CLI:
+1. Download and Install the latest `AutoWrapper.Core.Net5` from NuGet or via CLI:
 
 ```
-PM> Install-Package AutoWrapper.Core -Version 4.5.0
+PM> Install-Package AutoWrapper.Core.Net5 -Version 4.5.1
 ```
 
 2. Declare the following namespace within `Startup.cs`

@@ -2,18 +2,18 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>netcoreapp3.0;netcoreapp3.1;net5.0</TargetFrameworks>
-		<Authors>Vincent Maverick Durano</Authors>
-		<Description>A simple yet customizable HTTP response wrapper and exception handler for ASP.NET Core APIs.</Description>
+		<Authors>Matt McKinstry</Authors>
+		<Description>Version of Vince's excellent AutoWrapper.Core that adds .Net 5.0 support in a naive way</Description>
 		<PackageLicenseUrl></PackageLicenseUrl>
-		<PackageProjectUrl>https://github.com/proudmonkey/AutoWrapper</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/proudmonkey/AutoWrapper</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/mattmckinstry/AutoWrapper</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/mattmckinstry/AutoWrapper</RepositoryUrl>
 		<RepositoryType>Git</RepositoryType>
-		<Version>4.5.0</Version>
+		<Version>4.5.1</Version>
 		<PackageTags>AutoWrapper, REST, API, WebAPI, ASP.NETCore, Middleware, HttpResponseWrapper, NETCore, C#, ApiResponseAndExceptionWrapper, APIWrapper, ResponseWrapper, ExceptionWrapper, ProblemDetails</PackageTags>
 		<PackageReleaseNotes>See project repo for release notes.</PackageReleaseNotes>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageId>AutoWrapper.Core</PackageId>
+		<PackageId>AutoWrapper.Core.Net5</PackageId>
 		<PackageIcon>icon.png</PackageIcon>
 		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 	</PropertyGroup>
@@ -22,14 +22,14 @@
 		<None Include="icon.png" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
-	<ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
-		<FrameworkReference Include="Microsoft.AspNetCore.App" />
-		<PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-	</ItemGroup>
-
 	<ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.0' ">
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
-		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net5.0'">
